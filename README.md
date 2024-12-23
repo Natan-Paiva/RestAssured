@@ -7,6 +7,7 @@
 * Serialization and Deserialization with POJO Classes
 * Spec Builders
 * An e2e E-commerce API example
+* GraphQL
 ## Requirements
 * Java 11 or higher
 * Maven
