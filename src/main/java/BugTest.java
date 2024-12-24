@@ -10,7 +10,7 @@ public class BugTest{
     public static void main(String[] args){
         RestAssured.baseURI="https://natanabpaiva.atlassian.net";
 
-        String response = given().header("Content-Type", "application/json").header("Authorization", "Basic bmF0YW5hYnBhaXZhQGdtYWlsLmNvbTpBVEFUVDN4RmZHRjB6bDdKdVp5dG5OUGRFWnU5amZHV1pib2RaM3pMODZpcmIyQzQ0OXRWTk01bWFpeXoyQjJKYmx1WFU5RzVhRFhFZWxvOERlMjhNOWJQQWtGVTRhMkwtTlFmeXEySlBCR2lsSUExWlJFUW1sNlV0V2xEbkNGdFJweFdnd01TbGJJWU45c0dDdjRvTENhQzllYTYyeEZiV1ZTRl93WTBhSlcwckNycm1tNUNyUzA9NDk0MDM0M0E=")
+        String response = given().header("Content-Type", "application/json").header("Authorization", "Here goes the base64 authorization")
                 .body("{\n" +
                         "  \"fields\": {\n" +
                         "    \"project\": {\n" +
