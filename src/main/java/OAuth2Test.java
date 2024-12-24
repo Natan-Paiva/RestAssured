@@ -10,7 +10,7 @@ import java.util.List;
 
 import static io.restassured.RestAssured.*;
 
-public class OAuthTest {
+public class OAuth2Test {
     public static void main(String[] args){
         String[] courseTitle = {"Selenium Webdriver Java", "Cypress", "Protractor"};
         RestAssured.baseURI = "https://rahulshettyacademy.com/oauthapi/";

@@ -5,12 +5,13 @@ import java.io.File;
 
 import static io.restassured.RestAssured.*;
 
-
+//This test will fail if authorization is not entered
+//https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/ in this tutorial you can generate a basic auth
 public class BugTest{
     public static void main(String[] args){
-        RestAssured.baseURI="https://natanabpaiva.atlassian.net";
+        RestAssured.baseURI="https://here_goes_your_jira_project.atlassian.net"; //you must have a jira project
 
-        String response = given().header("Content-Type", "application/json").header("Authorization", "Here goes the base64 authorization")
+        String response = given().header("Content-Type", "application/json").header("Authorization", "Here goes the base64 basic authorization")
                 .body("{\n" +
                         "  \"fields\": {\n" +
                         "    \"project\": {\n" +
